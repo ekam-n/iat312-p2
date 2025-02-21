@@ -7,6 +7,7 @@ public class PlayerAimAndShoot : MonoBehaviour
     [SerializeField] private GameObject gun;
     [SerializeField] private GameObject bullet;
     [SerializeField] private GameObject flame;
+
     [SerializeField] private Transform bulletSpawnPoint;
 
     private GameObject bulletInst;
@@ -16,6 +17,7 @@ public class PlayerAimAndShoot : MonoBehaviour
     private float angle;
     private float timer = 0f;
     private float interval = 0.25f;
+
 
 
     private void Update()
@@ -71,6 +73,5 @@ public class PlayerAimAndShoot : MonoBehaviour
 
 
     }
-
 
 }
