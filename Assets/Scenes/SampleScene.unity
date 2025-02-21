@@ -411,8 +411,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 5
   JumpForce: 10
-  GlideForce: 2
-  BoostForce: 7
+  GlideGravityScale: 0.1
+  JumpBoostForce: 8
   HasUmbrella: 0
   UmbrellaSprite: {fileID: 0}
 --- !u!61 &545454375
@@ -573,6 +573,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gun: {fileID: 129418911}
   bullet: {fileID: 4329656785550442795, guid: 7f7eb85f51a79b44ba942e5eb73e4ea9, type: 3}
+  flame: {fileID: 1068809073895525371, guid: e75fd9292d50a5b4899c14aaee046eae, type: 3}
   bulletSpawnPoint: {fileID: 1950190301}
 --- !u!1 &619394800
 GameObject:
@@ -669,7 +670,7 @@ GameObject:
   - component: {fileID: 767318512}
   - component: {fileID: 767318511}
   - component: {fileID: 767318510}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -949,7 +950,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1582135057}
   - component: {fileID: 1582135056}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
