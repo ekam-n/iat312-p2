@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
             // Reset gravity scale when not gliding
             if (!isGrounded)
             {
-                rb.gravityScale = 1f;  // Reset gravity to normal when not gliding
+                rb.gravityScale = 2.5f;  // Reset gravity to normal when not gliding
             }
         }
 
@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
-            rb.gravityScale = 1f; // Reset gravity scale when on the ground
+            rb.gravityScale = 2.5f; // Reset gravity scale when on the ground
         }
     }
 
