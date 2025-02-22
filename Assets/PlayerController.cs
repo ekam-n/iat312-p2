@@ -9,6 +9,9 @@ public class PlayerController : MonoBehaviour
     public float JumpBoostForce = 8f;  // Vertical boost force when right-clicking
     public bool HasUmbrella = false;
 
+    // Health
+    public int health = 1; // Player starts with 3 health
+
     // References
     private Rigidbody2D rb;
     private bool isGrounded;
@@ -34,7 +37,6 @@ public class PlayerController : MonoBehaviour
         // Jumping (W key)
         if (Input.GetKeyDown(KeyCode.W) && isGrounded)
         {
-            // Jump force stays the same whether umbrella is picked up or not
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, JumpForce);
         }
 
@@ -45,7 +47,6 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            // Reset gravity scale when not gliding
             if (!isGrounded)
             {
                 rb.gravityScale = 2.5f;  // Reset gravity to normal when not gliding
@@ -59,9 +60,35 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // Make TakeDamage public so other scripts can access it
+    public void TakeDamage(int damage)
+    {
+        health -= damage + 3;
+        Debug.Log("Player took damage! Health: " + health);
+
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Debug.Log("Player died!");
+        Destroy(gameObject); // Remove player from the scene
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Projectile")) // If hit by a projectile
+        {
+            TakeDamage(3);
+            Destroy(other.gameObject); // Destroy the projectile
+        }
+    }
+
     private bool CheckGrounded()
     {
-        // Ground check using a raycast
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.1f);
         return hit.collider != null && hit.collider.CompareTag("Ground");
     }
@@ -78,7 +105,6 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Check if the player is grounded
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
@@ -88,7 +114,6 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        // Check if the player is no longer grounded
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = false;
