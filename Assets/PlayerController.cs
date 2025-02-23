@@ -72,7 +72,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void Die()
+    public void Die()
     {
         Debug.Log("Player died!");
         Destroy(gameObject); // Remove player from the scene
