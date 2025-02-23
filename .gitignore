@@ -1,30 +1,62 @@
-# Unity specific
+# =================================================================
+# Unity Project .gitignore
+# Source: https://github.com/github/gitignore/blob/main/Unity.gitignore
+# =================================================================
+
+# ========== Unity Generated Folders ==========
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
 [Bb]uild/
 [Bb]uilds/
 [Ll]ogs/
+[Mm]emoryCaptures/
 [Uu]ser[Ss]ettings/
-MemoryCaptures/
 
-# Visual Studio / JetBrains Rider
-.vs/
-*.sln
+# ========== Visual Studio / MonoDevelop / Rider ==========
 *.csproj
 *.unityproj
+*.sln
 *.suo
+*.tmp
 *.user
-*.booproj
+*.userprefs
 *.pidb
-*.sln.cache
+*.booproj
 *.svd
 *.pdb
-*.mdb
 *.opendb
 *.VC.db
 
-# OS-specific
+# Rider project files
+.idea/
+*.iml
+
+# ========== OS-Specific Files ==========
 .DS_Store
 Thumbs.db
 
+# ========== Additional Unity Files ==========
+# Ignore Unity cache data
+/Library/Bee/
+/Library/ScriptAssemblies/
+/Library/PlayerDataCache/
+/Library/PackageCache/
+
+# Unity auto-generated lightmaps
+Lightmap-*_comp_dir
+
+# If you're using Unity Collaborate / Plastic SCM, ignore these:
+.Collab/
+.Plastic/
+
+# ========== Misc. ==========
+# Uncomment if you want to ignore Visual Studio Code settings:
+# .vscode/
+
+# Uncomment if you want to keep build artifacts in a specific folder:
+# /Builds/
+
+# =================================================================
+# End of .gitignore
+# =================================================================
