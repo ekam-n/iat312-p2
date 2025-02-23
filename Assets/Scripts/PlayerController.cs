@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     public float JumpForce = 6f;  // Standard jump force, no increase with umbrella
     public float GlideGravityScale = 0.1f;  // Lower gravity scale to slow the fall while gliding
     public float JumpBoostForce = 8f;  // Vertical boost force when right-clicking
+    public int boostCounter = 3;
+    public bool canJump = true;
     public bool HasUmbrella = false;
 
     // Health
@@ -35,9 +37,9 @@ public class PlayerController : MonoBehaviour
         rb.linearVelocity = new Vector2(moveInput * MoveSpeed, rb.linearVelocity.y);
 
         // Jumping (W key)
-        if (Input.GetKeyDown(KeyCode.W) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.W) && canJump)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, JumpForce);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, JumpBoostForce);
         }
 
         // Gliding (Hold Left-Click when not grounded)
@@ -54,10 +56,13 @@ public class PlayerController : MonoBehaviour
         }
 
         // Jump Boost while gliding (Right-click)
-        if (HasUmbrella && !isGrounded && Input.GetMouseButtonDown(1)) // Right-click for boost
+        if (boostCounter != 0 && HasUmbrella && !isGrounded && Input.GetMouseButtonDown(1)) // Right-click for boost
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, JumpBoostForce); // Apply vertical boost
+            boostCounter--;
+            //Debug.Log(boostCounter);
         }
+        
     }
 
     // Make TakeDamage public so other scripts can access it
@@ -105,18 +110,23 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        boostCounter = 3;
+        canJump = true;
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+            //Debug.Log("grounded");
             rb.gravityScale = 2.5f; // Reset gravity scale when on the ground
         }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
+        canJump = false;
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = false;
+            //Debug.Log("not grounded");
         }
     }
 }
