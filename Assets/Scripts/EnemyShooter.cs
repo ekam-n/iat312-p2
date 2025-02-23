@@ -24,7 +24,7 @@ public class EnemyShooter : MonoBehaviour
         rb.linearVelocity = new Vector2(0, projectileSpeed);
 
         // Destroy the projectile after a few seconds to save memory
-        Destroy(projectile,5f);
+        Destroy(projectile,3f);
     }
 }
 
