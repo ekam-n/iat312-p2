@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\UnityProjects\\P2\\iat312-p2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D11F814F-1A90-6B0A-F9E3-F49EEB1E4782}|Assembly-CSharp.csproj|d:\\unityprojects\\p2\\iat312-p2\\assets\\scripts\\showtextontrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D11F814F-1A90-6B0A-F9E3-F49EEB1E4782}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\showtextontrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D11F814F-1A90-6B0A-F9E3-F49EEB1E4782}|Assembly-CSharp.csproj|d:\\unityprojects\\p2\\iat312-p2\\assets\\scripts\\trigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D11F814F-1A90-6B0A-F9E3-F49EEB1E4782}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\trigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,6 +31,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ShowTextOnTrigger.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\P2\\iat312-p2\\Assets\\Scripts\\ShowTextOnTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ShowTextOnTrigger.cs",
+              "ToolTip": "D:\\UnityProjects\\P2\\iat312-p2\\Assets\\Scripts\\ShowTextOnTrigger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ShowTextOnTrigger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T04:59:43.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Trigger.cs",
               "DocumentMoniker": "D:\\UnityProjects\\P2\\iat312-p2\\Assets\\Scripts\\Trigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Trigger.cs",
@@ -39,7 +56,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CameraFollow.cs",
               "DocumentMoniker": "D:\\UnityProjects\\P2\\iat312-p2\\Assets\\Scripts\\CameraFollow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFollow.cs",
@@ -51,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "D:\\UnityProjects\\P2\\iat312-p2\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",

@@ -15,14 +15,18 @@ public class AreaTrigger : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other)
-    {
-        Debug.Log("HI");
-        UIObject.SetActive(true);
+    { 
+        if(other.tag == "Player")
+        {
+            UIObject.SetActive(true);
+        }
+        
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        
+        UIObject.SetActive(false);
+        Destroy(trigger);
     }
 
     void Update()
