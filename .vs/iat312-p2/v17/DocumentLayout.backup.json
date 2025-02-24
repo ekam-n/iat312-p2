@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\UnityProjects\\P2\\iat312-p2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UnityProjects\\P2\\iat312-p2\\Assets\\Scripts\\PlayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\PlayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D11F814F-1A90-6B0A-F9E3-F49EEB1E4782}|Assembly-CSharp.csproj|d:\\unityprojects\\p2\\iat312-p2\\assets\\scripts\\trigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D11F814F-1A90-6B0A-F9E3-F49EEB1E4782}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\trigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D11F814F-1A90-6B0A-F9E3-F49EEB1E4782}|Assembly-CSharp.csproj|D:\\UnityProjects\\P2\\iat312-p2\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D11F814F-1A90-6B0A-F9E3-F49EEB1E4782}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D11F814F-1A90-6B0A-F9E3-F49EEB1E4782}|Assembly-CSharp.csproj|D:\\UnityProjects\\P2\\iat312-p2\\assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D11F814F-1A90-6B0A-F9E3-F49EEB1E4782}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,15 +27,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Trigger.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\P2\\iat312-p2\\Assets\\Scripts\\Trigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Trigger.cs",
+              "ToolTip": "D:\\UnityProjects\\P2\\iat312-p2\\Assets\\Scripts\\Trigger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Trigger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T04:42:04.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CameraFollow.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\P2\\iat312-p2\\Assets\\Scripts\\CameraFollow.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFollow.cs",
+              "ToolTip": "D:\\UnityProjects\\P2\\iat312-p2\\Assets\\Scripts\\CameraFollow.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CameraFollow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T02:08:15.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "D:\\UnityProjects\\P2\\iat312-p2\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
               "ToolTip": "D:\\UnityProjects\\P2\\iat312-p2\\Assets\\Scripts\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAuwHEAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAAFcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-23T00:36:27.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-23T00:36:27.536Z"
             }
           ]
         }
